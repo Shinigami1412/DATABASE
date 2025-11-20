@@ -7,6 +7,7 @@ import SearchBar from "./SearchBar";
 import MobileDrawer from "./MobileDrawer";
 import "./FahasaNavbar.css";
 import { allBooks } from "../../data/books";
+import logo from "../../assets/logo.png";
 
 export default function FahasaNavbar() {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -80,10 +81,7 @@ export default function FahasaNavbar() {
 
           <div className="logo">
             <Link to="/" aria-label="Trang chủ">
-              <img
-                src="https://cdn1.fahasa.com/skin/frontend/ma_vanese/fahasa/images/fahasa-logo.png"
-                alt="Fahasa - BookStore"
-              />
+              <img src={logo} alt="Fahasa - BookStore" />
             </Link>
           </div>
 
